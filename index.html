@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <h1>Password Manager</h1>
+        <div id="menu">
+            <button onclick="showAddPassword()">Add Password</button>
+            <button onclick="showRetrievePassword()">Retrieve Password</button>
+            
+        </div>
+
+        <!-- Add Password Form -->
+        <div id="addPasswordForm" class="form" style="display: none;">
+            <h2>Add Password</h2>
+            <input type="text" id="addAccount" placeholder="Account Name">
+            <input type="password" id="addPassword" placeholder="Password">
+            <button onclick="addPassword()">Save</button>
+        </div>
+
+        <!-- Retrieve Password Form -->
+        <div id="retrievePasswordForm" class="form" style="display: none;">
+            <h2>Retrieve Password</h2>
+            <input type="text" id="retrieveAccount" placeholder="Account Name">
+            <button onclick="retrievePassword()">Retrieve</button>
+            <p id="passwordDisplay"></p>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
